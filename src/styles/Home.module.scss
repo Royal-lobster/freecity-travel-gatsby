@@ -1,0 +1,32 @@
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width);
+  padding: 10vh 20px;
+  margin: 0 auto;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+  }
+  &__tagline {
+    font-size: 40px;
+  }
+  &__tagline span {
+    color: #2b706a;
+  }
+  &__desc {
+    line-height: 1.5;
+  }
+  &__image {
+    width: #{"min(400px, 100%)"};
+    height: 300px;
+    object-fit: cover;
+    background-color: #2b706a;
+  }
+}
